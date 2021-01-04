@@ -16,7 +16,7 @@ const MADNavigator = (props) =>{
             <Stack.Navigator>
                 {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
                 {props.screens.map(
-                    (value) => <Stack.Screen key={value.name} name={value.name} component={value} />
+                    (value) => <Stack.Screen key={value.name} name={value.name} component={value} options={{headerShown: props.headerShown}}/>
                 )}
             </Stack.Navigator>
         </NavigationContainer>

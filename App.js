@@ -22,7 +22,8 @@ const Stack = createStackNavigator();
 function App() {
   return (
     // put all the screens in an array and set it as "screens" prop
-    <MADNavigator screens={[HomeScreen, Screen2]} />
+    // set headerShown to false to hide the top title bar, else true to show it
+    <MADNavigator screens={[HomeScreen, Screen2]} headerShown={false} />
   );
 }
 
